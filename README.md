@@ -1,6 +1,8 @@
 # Node Modules Remover
 
-CAUTION: This script runs the `rm -rf` command to delete the folder.
+I'm tired of manually deleting all my node_modules folders, and since this is a tedious thing to do, you never do it. So here's a simple script to do that for you.
+
+**Note: This only works on Windows by running bash or by using the [WSL](https://docs.microsoft.com/en-us/windows/wsl/about).**
 
 ## Usage
 
@@ -15,6 +17,8 @@ Then run the script
 ```bash
 $ ./remove.sh
 ```
+
+**CAUTION: This script runs the `rm -rf` command to delete the folder(s).**
 
 ## Arguments
 
@@ -34,4 +38,18 @@ To make this script more useful, add the script's path as an alias to your .bash
 ...
 alias ALIAS_NAME='/absolute/path/to/the/remove.sh'
 ...
+```
+
+Once added, source your source file
+
+### Linux
+
+```bash
+$ source .bashrc
+```
+
+### Mac
+
+```bash
+$ source .zprofile
 ```
